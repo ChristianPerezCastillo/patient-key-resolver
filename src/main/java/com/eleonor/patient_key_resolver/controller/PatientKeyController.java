@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.googlecode.objectify.Key;
 
 @RestController
-@RequestMapping("/patient/resolve-key")
+@RequestMapping("/")
 @CrossOrigin(origins = "*")
 public class PatientKeyController {
 
@@ -53,7 +53,7 @@ public class PatientKeyController {
      * }
      */
     @PostMapping(
-            value = "/resolve-keys",
+            value = "/",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
